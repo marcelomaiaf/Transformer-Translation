@@ -23,5 +23,14 @@ Exemplo: ![alt text]({D86F0E38-4969-4BA6-9A4F-7D3B7DF0D8E2}.png)
 Erro quando identifica palavras em inglês sendo utilizadas na frase original: em caso quando utilizamos palavras como backend, frontend, sprint, etc o modelo comete erros ao tentar traduzir aquela palavra.
 Exemplo: ![alt text]({78E01093-6210-43C7-8F1E-4C017ED6553A}.png)
 
+# GPU X CPU
 
+## GPU
+Primeiramente, o modelo foi rodado no google colab utilizando uma T4, onde com 10 épocas de treinamento o modelo levou cerca de 18 minutos para realizar o treinamento. 
 
+## CPU
+Após a execução com GPU foi realizado o treinamento utilizando a CPU do google colab, porém nesse caso o tempo de treinamento foi extremamente maior, onde para executar apenas 1 época e metade de outra época de treinamento levou 1 hora e 26 minutos. Levando 61 minutos para executar apenas 1 época.
+![alt text]({CC4072CC-9CFE-4D78-91E1-A166072BB2F6}.png)
+
+## Conclusão
+Tendo em vista a diferença de tempo de treinamento entre CPU e GPU, o uso da segunda é altamente recomendado e significativamente superior. Além disso, o uso de paralelismo pode reduzir ainda mais o tempo de treinamento, tendo em vista que diferentemente de outras abordagens como RNN o uso de transformers permite a paralelização.
