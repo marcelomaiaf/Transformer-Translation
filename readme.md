@@ -1,0 +1,6 @@
+# Ponderada semana 2  Tradução usando Transformer
+
+# Introdução
+Transformer no contexto de NLP é um tipo de arquitetura de deep learning e diferentemente de redes neurais não depende de conexões sequenciais para realizar a tradução, além disso eles podem ser capazes de identificar relações de longa distância em um texto(a captura de relações de longa no exemplo não ficou tão boa, acredito ser pelo fato de que foram poucas épocas para o treinamento). Além disso, uma dos principais conceitos que diferenciam o transformer de outras arquiteturas é a "self-attention", que permite o transformer transmitir a informação através da sequência de input.
+
+A ideia de transformer foi proposto em um paper(["Attention is all you need"](https://arxiv.org/abs/1706.03762) by Vaswani et al. (2017).) que foi super bem reconhecido, devido ao fato de ele ser capaz de transmitir informação entre a rede sem a necessidade de sequencialidade como uma RNN faz, os modelos de transformers podem ser executados de forma paralela.
